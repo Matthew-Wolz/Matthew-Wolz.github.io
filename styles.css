@@ -94,14 +94,25 @@ nav a:hover {
 .project-card a:hover {
   text-decoration: underline;
 }
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.home-text {
+  flex: 1;
+  min-width: 300px;
+}
+.home-image {
+  flex: 0 0 auto;
+  max-width: 300px;
+}
 .headshot-image {
-  width: 200px; /* Fixed width for square */
-  height: 200px; /* Fixed height for square */
-  margin: 1rem auto;
-  border-radius: 0; /* No rounding for perfect square */
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 0; /* No rounding */
   display: block;
-  object-fit: cover; /* Crop to fill square */
-  object-position: top; /* Focus on upper portion */
 }
 .section-image, .experience-image {
   max-width: 100%;
@@ -152,10 +163,10 @@ footer a:hover {
   .section-pdf {
     height: 300px; /* Smaller height for mobile */
   }
-  .experience-content {
+  .experience-content, .home-content {
     flex-direction: column;
   }
-  .experience-images {
+  .experience-images, .home-image {
     max-width: 100%;
     align-items: center;
   }
