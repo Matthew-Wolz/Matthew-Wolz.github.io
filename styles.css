@@ -94,6 +94,27 @@ nav a:hover {
 .project-card a:hover {
   text-decoration: underline;
 }
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+.tag {
+  display: inline-block;
+  background-color: #E6E6FA;
+  color: #4B2E83;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid #7C5AB8;
+}
+.tag-favorite {
+  background-color: #FFD700;
+  color: #4B2E83;
+  border-color: #FFA500;
+}
 .home-content {
   display: flex;
   flex-wrap: wrap;
